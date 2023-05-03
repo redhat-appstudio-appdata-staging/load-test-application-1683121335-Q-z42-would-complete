@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-vb2s
+  namespace: jhutar-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/load-test-application-1683121335/devfile-sample-python-basic-vb2s@sha256:7fb2b22151f44d7d9026492aa476183c26f248dbec0721ef55576d2b4499c3d2
+        name: my-python
+        resources: {}
+status: {}
